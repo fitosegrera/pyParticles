@@ -17,9 +17,9 @@ class Drop:
 		ellipse(self.x, self.y, self.r, self.r)
 
 	#Check if the drop reached the bottom of an obstacle
-	def reachedBottom(self, dropPos, total):
+	def reachedBottom(self, limit, total):
 		for i in range(total):
-			if (self.y >= (dropPos - self.r*20)):
+			if (self.y >= (limit + self.r*30)):
 				return True
 			else:
 				return False
